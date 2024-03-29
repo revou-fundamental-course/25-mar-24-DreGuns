@@ -1,9 +1,103 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="css/style.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator BMI</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h2>Calculator BMI - Andre Gunawan</h2>
+    </header>
+    <main>
+      <!-- Main Container -->
+      <div class="container-main">
+        <div class="form">
+          <h3>Kalkulator BMI</h3>
+          <p class="parag">
+            Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+            bentuk tubuh yang menunjang penampilan, berat badan ideal juga
+            menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung
+            sekarang dengan kalkulator BMI.
+          </p>
+          <!-- Container Form -->
+          <div class="container-form">
+            <section class="gender">
+              <b><label for="gender">Jenis Kelamin</label></b>
+              <br />
+              <div class="input-gender">
+                <input type="radio" name="gender" id="gender" value="men" />
+                <b><span>Pria</span></b>
+                <input type="radio" name="gender" id="gender" value="woman" />
+                <b><span>Wanita</span></b>
+              </div>
+            </section>
+            <section class="weight">
+              <b><label for="weight">Berat Badan (Kg)</label></b
+              ><br />
+              <div class="input-container">
+                <div class="fa fa-pencil pencil-icon"></div>
+                <input type="number" name="weight" id="weight" />
+              </div>
+            </section>
+            <section class="age">
+              <b><label for="age">Usia (Tahun)</label></b
+              ><br />
+              <div class="input-container">
+                <div class="fa fa-pencil pencil-icon"></div>
+                <input type="number" name="age" id="age" />
+              </div>
+            </section>
+            <section class="height">
+              <b><label for="height">Tinggi Badan (cm)</label></b>
+              <div class="input-container">
+                <div class="fa fa-pencil pencil-icon"></div>
+                <input type="number" name="height" id="height" />
+              </div>
+            </section>
+            <button type="submit" class="btn-primary">Hitung BMI</button>
+            <button type="button" class="btn-default">Reset</button>
+          </div>
+          <section>
+            <h3>Keungulan Fitur</h3>
+            <ol>
+              <li>Menghitung berat badan</li>
+              <li>Menentukan kategori berat badan ideal atau tidak</li>
+              <li>Mempersiapkan penurunan berat badan</li>
+            </ol>
+          </section>
+          <section>
+            <p class="parag">
+              Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita
+              hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+              dan tidak ada tindakan yang harus diambil berdasarkan nilainya,
+              selain berkonsultasi dengan orang yang memenuhi syarat seperti
+              dokter.
+            </p>
+          </section>
+          <section>
+            <p class="parag">
+              Kalkulator akan memberi Anda gambaran tentang perbandingan berat
+              badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI)
+              dihitung sebagai berat badan Anda (dalam Kilogram) dibagi dengan
+              kuadrat tinggi badan Anda (dalam Meter) atau BMI = Kg/M<sup
+                >2</sup
+              >
+            </p>
+          </section>
+        </div>
+        <!-- Container Result -->
+        <div class="result">
+          <h3>Hasil</h3>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
