@@ -60,8 +60,10 @@
                 <input type="number" name="height" id="height" />
               </div>
             </section>
-            <button type="submit" class="btn-primary">Hitung BMI</button>
-            <button type="button" class="btn-default">Reset</button>
+            <button type="submit" class="btn-primary" id="calculate">
+              Hitung BMI
+            </button>
+            <button type="button" class="btn-default" id="reset">Reset</button>
           </div>
           <section>
             <h3>Keungulan Fitur</h3>
@@ -94,6 +96,67 @@
         <!-- Container Result -->
         <div class="result">
           <h3>Hasil</h3>
+          <section class="result-item">
+            <h5>Berat Badan Lebih</h5>
+            <h2>0</h2>
+            <h5>Anda memiliki berat badan berlebih</h5>
+            <button type="button" class="btn-primary">
+              Download Hasil BMI
+            </button>
+          </section>
+          <section>
+            <p class="parag">
+              Hasil BMI diantara 23 dan 25. <br />
+              Anda berada dalam kategori overweight atau berat badan berlebih.
+              <br />
+              Cara terbaik untuk menurunkan berat badan adalah dengan mengatur
+              kalori makanan yang dikonsumsi dan berolahraga. <br />
+              Jika BMI Anda berada dalam kategori ini, maka Anda dianjurkan
+              untuk menurunkan berat badan hingga batas normal.
+            </p>
+            <button type="button" class="btn-primary" id="consult">
+              Konsultasi Ahli Gizi Via Aplikasi
+            </button>
+            <button type="button" class="btn-primary" id="regist">
+              Registrasi Online Ahli Gizi
+            </button>
+          </section>
+          <section>
+            <p class="parag">
+              BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+              tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih
+              lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat
+              badan Anda.
+            </p>
+          </section>
+          <section class="result-item">
+            <p>Beberapa penyakit yang berasal dari kegemukan</p>
+            <p>Diabetes</p>
+            <p>Hipertensi</p>
+            <p>Sakit Jantung</p>
+            <p>Osteoarthritis</p>
+            <button type="button" class="btn-primary">
+              Konsultasi Dokter Via Aplikasi
+            </button>
+            <button type="button" class="btn-primary">
+              Registrasi Online Sekarang
+            </button>
+          </section>
+          <section class="download-app">
+            <p>Download Aplikasi</p>
+            <div class="app-icon">
+              <img
+                class="play-store"
+                src="/25-mar-24-DreGuns/assets/img/play-store.png"
+                alt="play-store"
+              />
+              <img
+                class="app-store"
+                src="/25-mar-24-DreGuns/assets/img/app-store.png"
+                alt="app-store"
+              />
+            </div>
+          </section>
         </div>
       </div>
     </main>

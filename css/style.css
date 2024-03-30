@@ -64,6 +64,7 @@
   border: 0px;
   background-color: rgb(76, 191, 237);
   color: white;
+  margin-bottom: 10px;
 }
 .btn-default {
   padding: 8px;
@@ -71,4 +72,16 @@
   border: 5px;
   background-color: lightgrey;
   color: black;
+}
+.result-item {
+  text-align: center;
+  background-color: aliceblue;
+  padding: 8px;
+}
+.download-app {
+  text-align: center;
+}
+.app-icon img {
+  height: 55px;
+  width: 150px;
 }
