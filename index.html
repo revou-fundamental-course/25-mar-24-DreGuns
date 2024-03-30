@@ -42,7 +42,7 @@
               ><br />
               <div class="input-container">
                 <div class="fa fa-pencil pencil-icon"></div>
-                <input type="number" name="weight" id="weight" />
+                <input type="number" name="weight" id="weight" required />
               </div>
             </section>
             <section class="age">
@@ -50,17 +50,17 @@
               ><br />
               <div class="input-container">
                 <div class="fa fa-pencil pencil-icon"></div>
-                <input type="number" name="age" id="age" />
+                <input type="number" name="age" id="age" required />
               </div>
             </section>
             <section class="height">
               <b><label for="height">Tinggi Badan (cm)</label></b>
               <div class="input-container">
                 <div class="fa fa-pencil pencil-icon"></div>
-                <input type="number" name="height" id="height" />
+                <input type="number" name="height" id="height" required />
               </div>
             </section>
-            <button type="submit" class="btn-primary" id="calculate">
+            <button type="button" class="btn-primary" id="btnCalculate">
               Hitung BMI
             </button>
             <button type="button" class="btn-default" id="reset">Reset</button>
@@ -97,10 +97,10 @@
         <div class="result">
           <h3>Hasil</h3>
           <section class="result-item">
-            <h5>Berat Badan Lebih</h5>
-            <h2>24.5</h2>
-            <h5>Anda memiliki berat badan berlebih</h5>
-            <button type="button" class="btn-primary">
+            <h5 id="result-weight"></h5>
+            <h2 id="result-cal"></h2>
+            <h5 id="result-info-weight"></h5>
+            <button type="button" class="btn-primary" id="download-result-bmi">
               Download Hasil BMI
             </button>
           </section>
