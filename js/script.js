@@ -2,6 +2,9 @@ let weight = document.getElementById("weight");
 let height = document.getElementById("height");
 let age = document.getElementById("age");
 let btnCalculate = document.getElementById("btnCalculate");
+let resultBMI = document.getElementById("result-cal");
+let resultWeight = document.getElementById("result-weight");
+let resultInfoBMi = document.getElementById("result-info-weight");
 
 btnCalculate.addEventListener("click", function (e) {
   e.preventDefault();
@@ -14,11 +17,6 @@ btnCalculate.addEventListener("click", function (e) {
   let heightVal = Math.pow(height.value / 100, 2);
   let weightVal = weight.value;
   let resultCalculate = weightVal / heightVal;
-
-  //   let downloadBtn = document.getElementById("download-result-bmi");
-  let resultBMI = document.getElementById("result-cal");
-  let resultWeight = document.getElementById("result-weight");
-  let resultInfoBMi = document.getElementById("result-info-weight");
 
   resultBMI.textContent = resultCalculate.toFixed(2);
 
@@ -35,4 +33,18 @@ btnCalculate.addEventListener("click", function (e) {
     resultWeight.textContent = "Kegemukan (Obesitas)";
     resultInfoBMi.textContent = "Berat Badan Anda Telah Mencapai Obesitas   ";
   }
+});
+
+btnReset.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (!height.value || !weight.value || !age.value) {
+    return;
+  }
+  height.value = "";
+  weight.value = "";
+  age.value = "";
+  resultBMI.textContent = "";
+  resultWeight.textContent = "";
+  resultInfoBMi.textContent = "";
+  alert("Berhasil di Reset");
 });
