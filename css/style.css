@@ -1,27 +1,33 @@
 /* Style CSS */
+/* Header */
 .header {
   text-align: center;
 }
+/* Container Main */
 .container-main {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Form */
 .form {
   width: 100%;
   padding: 15px;
 }
+/* Result */
 .result {
   width: 100%;
   padding: 15px;
 }
+/* Paragraf */
 .parag {
   text-align: justify;
 }
+/* Container Form */
 .container-form {
   background-color: aliceblue;
   padding: 15px;
 }
+/* Input Gender */
 .input-gender {
   padding-top: 10px;
 }
@@ -31,33 +37,39 @@
 .height {
   padding-bottom: 25px;
 }
+/* Icon Pencil */
 .pencil-icon {
   display: inline-block;
   font-size: 16px;
   margin-right: 5px;
 }
+/* Container Input */
 .input-container {
   display: flex;
   align-items: center;
 }
+/* Class Weight */
 .weight input {
   margin: 10px;
   width: 95%;
   box-sizing: border-box;
   border-radius: 8px;
 }
+/* Class Age */
 .age input {
   margin: 10px;
   width: 95%;
   box-sizing: border-box;
   border-radius: 8px;
 }
+/* Class Height */
 .height input {
   margin: 10px;
   width: 95%;
   box-sizing: border-box;
   border-radius: 8px;
 }
+/* Class Button Primary */
 .btn-primary {
   padding: 8px;
   border-radius: 5px;
@@ -66,6 +78,7 @@
   color: white;
   margin-bottom: 10px;
 }
+/* Class Button Default */
 .btn-default {
   padding: 8px;
   border-radius: 5px;
@@ -73,14 +86,17 @@
   background-color: lightgrey;
   color: black;
 }
+/* Result Item */
 .result-item {
   text-align: center;
   background-color: aliceblue;
   padding: 8px;
 }
+/* Class Download App */
 .download-app {
   text-align: center;
 }
+/* Class App Icon */
 .app-icon img {
   height: 55px;
   width: 150px;
