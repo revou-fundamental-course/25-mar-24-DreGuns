@@ -96,73 +96,76 @@
           </section>
         </div>
         <!-- Container Result -->
-        <div class="result">
+        <div class="result" id="containerResult" style="display: none">
           <h3>Hasil</h3>
-          <section class="result-item">
+          <section id="secItem1">
             <h5 id="result-weight"></h5>
             <h2 id="result-cal"></h2>
             <h5 id="result-info-weight"></h5>
-            <button type="button" class="btn-primary" id="download-result-bmi">
-              Download Hasil BMI
-            </button>
-          </section>
-          <section>
-            <p class="parag">
-              Hasil BMI diantara 23 dan 25. <br />
-              Anda berada dalam kategori overweight atau berat badan berlebih.
-              <br />
-              Cara terbaik untuk menurunkan berat badan adalah dengan mengatur
-              kalori makanan yang dikonsumsi dan berolahraga. <br />
-              Jika BMI Anda berada dalam kategori ini, maka Anda dianjurkan
-              untuk menurunkan berat badan hingga batas normal.
-            </p>
-            <button type="button" class="btn-primary" id="consult">
-              Konsultasi Ahli Gizi Via Aplikasi
-            </button>
-            <button type="button" class="btn-primary" id="regist">
-              Registrasi Online Ahli Gizi
-            </button>
-          </section>
-          <section>
-            <p class="parag">
-              BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
-              tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih
-              lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat
-              badan Anda.
-            </p>
-          </section>
-          <section class="result-item">
-            <p>Beberapa penyakit yang berasal dari kegemukan</p>
-            <p>Diabetes</p>
-            <p>Hipertensi</p>
-            <p>Sakit Jantung</p>
-            <p>Osteoarthritis</p>
-            <button type="button" class="btn-primary">
-              Konsultasi Dokter Via Aplikasi
-            </button>
-            <button type="button" class="btn-primary">
-              Registrasi Online Sekarang
-            </button>
-          </section>
-          <section class="download-app">
-            <p>Download Aplikasi</p>
-            <div class="app-icon">
-              <a href="#" target="_blank">
-                <img
-                  class="play-store"
-                  src="/25-mar-24-DreGuns/assets/img/play-store.png"
-                  alt="play-store"
-                />
-              </a>
-              <a href="#" target="_blank">
-                <img
-                  class="app-store"
-                  src="/25-mar-24-DreGuns/assets/img/app-store.png"
-                  alt="app-store"
-                />
-              </a>
+            <div style="text-align: center">
+              <button
+                type="button"
+                id="btnDownloadResult"
+                style="display: none"
+              >
+                Download Hasil BMI
+              </button>
             </div>
           </section>
+          <section>
+            <p class="parag" id="p1"></p>
+            <div style="text-align: center">
+              <button type="button" id="btnConsult" style="display: none">
+                Konsultasi Ahli Gizi Via Aplikasi
+              </button>
+              <button type="button" id="btnRegist" style="display: none">
+                Registrasi Online Ahli Gizi
+              </button>
+            </div>
+          </section>
+          <section>
+            <p class="parag" id="p2"></p>
+          </section>
+          <section id="secItem2" style="text-align: center">
+            <p id="p3"></p>
+            <p id="p4"></p>
+            <p id="p5"></p>
+            <p id="p6"></p>
+            <p id="p7"></p>
+            <div style="text-align: center">
+              <button type="button" id="btnConsult2" style="display: none">
+                Konsultasi Dokter Via Aplikasi
+              </button>
+              <button type="button" id="btnRegist2" style="display: none">
+                Registrasi Online Sekarang
+              </button>
+            </div>
+          </section>
+          <div style="text-align: center">
+            <section
+              class="download-app"
+              style="display: none"
+              id="download-apps"
+            >
+              <p>Download Aplikasi</p>
+              <div class="app-icon">
+                <a href="#" target="_blank">
+                  <img
+                    class="play-store"
+                    src="/25-mar-24-DreGuns/assets/img/play-store.png"
+                    alt="play-store"
+                  />
+                </a>
+                <a href="#" target="_blank">
+                  <img
+                    class="app-store"
+                    src="/25-mar-24-DreGuns/assets/img/app-store.png"
+                    alt="app-store"
+                  />
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </main>
