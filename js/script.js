@@ -174,5 +174,8 @@ btnReset.addEventListener("click", function (e) {
     return;
   }
   conResult.style.display = "none";
+  weight.value = "";
+  height.value = "";
+  age.value = "";
   alert("Berhasil di Reset");
 });
