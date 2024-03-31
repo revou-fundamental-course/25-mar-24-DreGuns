@@ -77,6 +77,12 @@
   background-color: rgb(76, 191, 237);
   color: white;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Hover Button */
+.btn-primary:hover {
+  background-color: rgb(27, 195, 27);
 }
 /* Class Button Default */
 .btn-default {
@@ -85,6 +91,13 @@
   border: 5px;
   background-color: lightgrey;
   color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Button Default Hover */
+.btn-default:hover {
+  background-color: red;
+  color: white;
 }
 /* Result Item */
 .result-item {
