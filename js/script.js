@@ -23,6 +23,7 @@ let secItem2 = document.getElementById("secItem2");
 let appIcon = document.getElementById("download-apps");
 let conResult = document.getElementById("containerResult");
 
+// Button Calculate
 btnCalculate.addEventListener("click", function (e) {
   e.preventDefault();
 
@@ -46,7 +47,7 @@ btnCalculate.addEventListener("click", function (e) {
     "tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih " +
     "lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.";
 
-  // Kekurangan berat badan
+  // Underweight
   if (resultCalculate < 18.5) {
     resultWeight.textContent = "Kekurangan Berat Badan";
     resultInfoBMi.textContent = "Berat Badan Anda Kurang Ideal";
@@ -76,7 +77,8 @@ btnCalculate.addEventListener("click", function (e) {
     btnConsult2.classList.add("btn-primary");
     btnRegist2.style.display = "inline-block";
     btnRegist2.classList.add("btn-primary");
-  } // Berat badan Ideal
+  }
+  // Ideal Weight
   else if (resultCalculate >= 18.5 && resultCalculate <= 24.9) {
     resultWeight.textContent = "Normal (Ideal)";
     resultInfoBMi.textContent = "Berat Badan Anda Ideal";
@@ -106,7 +108,8 @@ btnCalculate.addEventListener("click", function (e) {
     btnConsult2.classList.add("btn-primary");
     btnRegist2.style.display = "inline-block";
     btnRegist2.classList.add("btn-primary");
-  } // Berat badan berlebih
+  }
+  // Excess Weight
   else if (resultCalculate > 25.0 && resultCalculate <= 29.9) {
     resultWeight.textContent = "Kelebihan Berat Badan";
     resultInfoBMi.textContent = "Anda Memiliki Berat Badan Berlebih";
@@ -133,7 +136,8 @@ btnCalculate.addEventListener("click", function (e) {
     btnConsult2.classList.add("btn-primary");
     btnRegist2.style.display = "inline-block";
     btnRegist2.classList.add("btn-primary");
-  } // Berat badan Obesitas
+  }
+  // Obesity Weight
   else if (resultCalculate > 30.0) {
     resultWeight.textContent = "Kegemukan (Obesitas)";
     resultInfoBMi.textContent = "Berat Badan Anda Telah Mencapai Obesitas   ";
